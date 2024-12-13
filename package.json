@@ -2,15 +2,15 @@
   "name": "docusaurus-theme-zen",
   "version": "1.0.0",
   "author": {
-    "url": "https://github.com/docusaurus-theme-zen",
-    "email": "wrm244@outlook.com",
+    "url": "https://github.com/AnyaReese",
+    "email": "anyareese555@gmail.com",
     "name": "wrm244"
   },
   "repository": {
-    "url": "https://github.com/wrm244/docusaurus-theme-zen",
+    "url": "https://github.com/AnyaReese/AnyaPage",
     "type": "git"
   },
-  "homepage": "https://wrm244.github.io/docusaurus-theme-zen",
+  "homepage": "https://anyareese.github.io/AnyaPage",
   "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",

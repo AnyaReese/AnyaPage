@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,27 +12,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Use Node.js v18.16
+      - name: Use Node.js v22.1
         uses: actions/setup-node@v3
         with:
-          node-version: '18.16.0'
+          node-version: '22.1.0'
 
-      # - name: Cache node modules
-      #   uses: actions/cache@v1
-      #   id: cache
-      #   with:
-      #     path: node_modules
-      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-node-
+      #使用缓存
+      - name: Cache node modules
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install Dependencies
-        # if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install
       
       - name: Build Project
         run: |
           yarn run build
 
+      #使用SSH同步到云服务器
       # - name: SSH Deploy
       #   uses: easingthemes/ssh-deploy@v2.2.11
       #   env:
@@ -47,8 +48,8 @@ jobs:
       - name: Github page Deploy
         uses: wrm244/docusaurus-deploy-action@master # 
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # secret 名
-          PUBLISH_REPOSITORY: wrm244/docusaurus-theme-zen # 公共仓库，格式：GitHub 用户名/仓库名
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }} # secret: PERSONAL_TOKEN
+          PUBLISH_REPOSITORY: AnyaReese/AnyaPage # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 分支，填 gh-pages 就行
           PUBLISH_DIR: ./build # 部署 public 目录下的文件
 

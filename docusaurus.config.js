@@ -5,13 +5,13 @@ const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm2
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'docusaurus-theme-zen',
+  title: 'AnyaPage',
   titleDelimiter: '-',
-  url: 'https://wrm244.github.io/',//请填写你的网站
-  baseUrl: '/docusaurus-theme-zen/',//建议填写/
+  url: 'https://anyareese.github.io/',//请填写你的网站
+  baseUrl: '/AnyaPage/',//建议填写/
   favicon: '/assets/images/social/avatar.ico',
   organizationName: '',
-  projectName: 'docusaurus-theme-zen',
+  projectName: 'AnyaPage',
   tagline: 'docusaurus的一款美观便捷主题',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -52,7 +52,7 @@ const config = {
       },
     },
     navbar: {
-      title: 'docusaurus-theme-zen',
+      title: 'AnyaPage',
       logo: {
         alt: 'your name',
         src: '/assets/images/social/avatar.png',
