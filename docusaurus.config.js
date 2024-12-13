@@ -1,19 +1,19 @@
 const path = require('path')
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm244/docusaurus-theme-zen/" target="_blank">docusaurus-theme-zen</a>`
+const announcementBarContent = `🎉 Welcometo Anya Reese's Home Page`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AnyaPage',
+  title: 'AnyaReese',
   titleDelimiter: '-',
   url: 'https://anyareese.github.io/',
   baseUrl: '/AnyaPage/',
   favicon: '/assets/images/social/avatar.ico',
   organizationName: '',
-  projectName: 'AnyaPage',
-  tagline: 'AnyaPage',
-  onBrokenLinks: 'ignore',  //忽略坏链
+  projectName: 'AnyaReese',
+  tagline: 'AnyaReese',
+  onBrokenLinks: 'ignore',
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
     image: '/assets/images/social/avatar.png',
@@ -52,11 +52,11 @@ const config = {
       },
     },
     navbar: {
-      title: 'AnyaPage',
+      title: 'AnyaReese',
       logo: {
-        alt: 'your name',
+        alt: 'AnyaReese\'s quick overview',
         src: '/assets/images/social/avatar.png',
-        srcDark: '/assets/images/social/avatar.png',//记得加上绝对路径/
+        srcDark: '/assets/images/social/avatar.png',
       },
       hideOnScroll: false,
       items: [
@@ -148,7 +148,7 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/wrm244/docusaurus-theme-zen',
+              href: 'https://github.com/anyareese',
             },
           ],
         },
@@ -215,7 +215,7 @@ const config = {
       },
     },
     giscus: {
-      repo: 'wrm244/docusaurus-theme-zen',
+      repo: 'anyareese/AnyaPage',
       repoId: 'R_kgDOJZ-VIA',
       category: 'General',
       categoryId: 'DIC_kwDOJZ-VIM4CV95r',
@@ -225,12 +225,10 @@ const config = {
     liveCodeBlock: {
       playgroundPosition: 'top',
     },
-    socials: {//需要修改
-      github: 'https://github.com/',
+    socials: {// TODO 个人社交媒体，没有的换个 icon
+      github: 'https://github.com/anyareese',
       twitter: 'https://twitter.com/',
       csdn: 'https://blog.csdn.net/',
-      juejin: 'https://juejin.cn/',
-      qq: 'tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=xxxxxxxx&website=www.oicqzone.com',
       zhihu: 'https://www.zhihu.com/',
     },
   },
@@ -294,7 +292,7 @@ const config = {
         feedOptions: {
           type: 'all',
           title: 'docusaurus-theme-zen',
-          copyright: `Copyright © ${new Date().getFullYear()} your name Built with Docusaurus. class="footer_lin">`,
+          copyright: `Copyright © ${new Date().getFullYear()} AnyaReese Built with Docusaurus. class="footer_lin">`,
         },
       },
     ],

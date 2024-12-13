@@ -284,6 +284,20 @@ html[data-theme='dark'] .bloghome__intro > p {
     transform: rotateY(360deg);
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
 /* 首页底部的小箭头 */
 .arrowDownBtnWrapper {
   position: absolute;

@@ -7,7 +7,7 @@ import { ThemeConfig } from '@docusaurus/preset-classic'
 
 import Link from '@docusaurus/Link'
 
-import HeroMain from './img/javascript_illustration.svg'
+import HeroMain from './img/anyapainting.svg'
 
 import JuejinIcon from '@site/static/svg/juejin.svg'
 import { Icon } from '@iconify/react'
@@ -50,14 +50,15 @@ function Hero() {
     <animated.div className={styles.hero}>
       <div className={styles.bloghome__intro}>
         <animated.div style={trails[0]} className={styles.hero_text}>
-          <Translate id="homepage.hero.greet">欢迎使用</Translate>
+          <Translate id="homepage.hero.greet">欢迎来到</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">docusaurus-theme-zen</Translate>
+            <Translate id="homepage.hero.name"> Anya Reese </Translate>
           </span>
+          <Translate id="homepage.hero.greet">的个人主页</Translate>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`index 主页内容。`}
+            {`我是 Anya Reese，浙江大学信息安全 22 级本科生。`}
           </Translate>
           <br />
           {/* <Translate
@@ -85,10 +86,10 @@ function Hero() {
               ),
             }}
           >
-            {`你可以随处逛逛与评论，查看{note}、{project}、{link}、以及我的{idea}。`}
           </Translate> */}
           <br />
           {/* 徽章的效果 */}
+          {/* TODO: 加入 Github commit 的修改 */}
           <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=Update&logo=github" style={{ boxShadow: '0px 16px 30px rgb(62 196 109 / 15%)', marginTop: '14px' }} /> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wrm244/docusaurus-theme-zen/ci.yml?label=CI%20Build&logo=github" style={{ boxShadow: '0px 16px 30px rgb(62 196 109 / 15%)', marginTop: '14px' }}></img>
         </animated.p>
         <SocialLinks style={trails[2]} />
@@ -106,7 +107,7 @@ function Hero() {
       
       <div className={styles.bloghome__image}>
         <ArrowDownBtn />
-        <HeroMain />
+        <HeroMain className={styles.rotate} />
         <ArrowDownBtn />
       </div>
     </animated.div>
