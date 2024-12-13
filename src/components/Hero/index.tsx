@@ -57,7 +57,7 @@ function Hero() {
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`这是使用docusaurus搭建的主题,结合了docusaurus简单易用与其他开源页面设计方案、支持MDX和React、可扩展和定制等优点，以及加上设计美观便利、博客与文档一体的主题，为你提供一个优秀的个人页面解决方案。`}
+            {`index 主页内容。`}
           </Translate>
           <br />
           {/* <Translate
