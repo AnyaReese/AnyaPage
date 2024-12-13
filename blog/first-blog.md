@@ -3,7 +3,7 @@ slug: first-blog
 title: Docusaurus-Theme-Zen
 date: 2023-04-12 14:09:58
 tags: [docusaurus-theme-zen,lifestyle]
-authors: RiverMountain
+authors: AnyaReese
 ---
 ![logo](/assets/images/avatar300.png)
 ## Docusaurus-Theme-Zen

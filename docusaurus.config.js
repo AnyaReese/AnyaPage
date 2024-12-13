@@ -7,12 +7,12 @@ const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm2
 const config = {
   title: 'AnyaPage',
   titleDelimiter: '-',
-  url: 'https://anyareese.github.io/',//请填写你的网站
-  baseUrl: '/AnyaPage/',//建议填写/
+  url: 'https://anyareese.github.io/',
+  baseUrl: '/AnyaPage/',
   favicon: '/assets/images/social/avatar.ico',
   organizationName: '',
   projectName: 'AnyaPage',
-  tagline: 'docusaurus的一款美观便捷主题',
+  tagline: 'AnyaPage',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -39,7 +39,7 @@ const config = {
       },
       {
         name: 'keywords',
-        content: 'blog,javascript, nginx,, react, vue, web',
+        content: 'blog, art, python, javascript, react, vue',
       },
       {
         name: 'keywords',
@@ -61,15 +61,15 @@ const config = {
       hideOnScroll: false,
       items: [
         {
-          label: '博客',
+          label: '个人足迹',
           position: 'left',
           items: [
             {
-              label: '标签',
+              label: '简历',
               to: 'tags',
             },
             {
-              label: '归档',
+              label: '技术探索',
               to: 'archive',
             },
             {
@@ -79,16 +79,16 @@ const config = {
           ],
         },
         {
-          label: '笔记',
+          label: '艺术笔记',
           position: 'left',
           to: 'docs/stack/',
           items: [
             {
-              label: '本站的搭建',
+              label: '个人创作',
               to: 'first-blog',
             },
             {
-              label: '学习栈',
+              label: '深入人心的作品',
               to: 'docs/stack/',
             },
           ],

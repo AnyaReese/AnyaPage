@@ -1,7 +1,7 @@
 export const Friends: Friend[] = [
   {
-    title: '河山的技术存档',
-    description: '计算机研究，编程爱好者',
+    title: 'AnyaReese 的技术存档',
+    description: '计算机研究，艺术爱好者',
     website: 'https://wrm244.gxist.cn',
     avatar: '/assets/images/friends/avatar.png',
   },
