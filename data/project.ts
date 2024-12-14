@@ -12,14 +12,12 @@ export const projects: Project[] = [
     title: 'AnyaPage',
     description: 'AnyaReese 的个人博客',
     preview: '/AnyaPage/assets/images/project/blog.png',
-    website: 'https://anyareese.github.io',
+    website: 'https://anyareese.github.io/AnyaPage',
     source: 'https://github.com/AnyaReese/AnyaPage',
     tags: ['personal', 'design', 'favorite'],
     type: 'other',
   },
 ]
-
-
 
 export type Tag = {
   label: string

@@ -20,7 +20,7 @@ const DESCRIPTION = translate({
   message: '以下项目均由本人开发。',
 })
 
-const GITHUB_URL = 'https://anyareese.github.io'
+const GITHUB_URL = 'https://github.com/AnyaReese'
 
 type ProjectState = {
   scrollTopPosition: number
