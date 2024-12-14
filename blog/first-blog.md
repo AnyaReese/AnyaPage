@@ -1,8 +1,8 @@
 ---
 slug: first-blog
-title: Docusaurus-Theme-Zen
-date: 2023-04-12 14:09:58
-tags: [docusaurus-theme-zen,lifestyle]
+title: Anya
+date: 2024-12-14
+tags: [anya, ZJU, Docusaurus, LifeHack, Tech]
 authors: AnyaReese
 ---
 ![logo](/assets/images/avatar300.png)

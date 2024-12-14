@@ -66,15 +66,11 @@ const config = {
           items: [
             {
               label: '简历',
-              to: 'tags',
+              to: 'docs/personal/resume',
             },
             {
-              label: '技术探索',
+              label: '博客',
               to: 'archive',
-            },
-            {
-              label: '随笔',
-              to: 'tags/lifestyle',
             },
           ],
         },

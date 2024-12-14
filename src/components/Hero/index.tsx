@@ -96,7 +96,7 @@ function Hero() {
         </animated.p>
         <SocialLinks style={trails[2]} />
         <animated.div style={trails[3]}>
-          <a className={styles.intro} href={'./first-blog'}>
+          <a className={styles.intro} href={'./about'}>
             <Translate id="hompage.hero.introduce">自我介绍</Translate>
           </a>
           <span> </span>
