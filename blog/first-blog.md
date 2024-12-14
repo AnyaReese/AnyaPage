@@ -1,25 +1,26 @@
 ---
 slug: first-blog
-title: Anya
+title: Anya's first 
 date: 2024-12-14
 tags: [anya, ZJU, Docusaurus, LifeHack, Tech]
 authors: AnyaReese
 ---
-![logo](/assets/images/avatar300.png)
-## Docusaurus-Theme-Zen
+
+import LogoSwitcher from '@site/src/components/Logo/LogoSwitcher';
+
+<LogoSwitcher />
+
+
+## AnyaReese Home Page
 ![GitHub last commit](https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=update&logo=github)  
-
-![Github Action](https://github.com/wrm244/docusaurus-theme-zen/actions/workflows/ci.yml/badge.svg) 
-
 
 ## 介绍
 
-
+我是安假李四，这是我第一次接触 Docusaurus 和 react 项目，在不断学习的路上，plus est en vous: There's more in me(you).
 
 <!-- truncate -->
 
-> This is a theme built with docusaurus, which combines the simplicity and ease of use of docusaurus with other open source page design solutions, supports MDX and React, is extensible and customizable, and also has a beautiful design, a blog and documentation integrated theme, providing you with an excellent personal page solution.
-
+> 这是我的个人主页。
 
 ## 目录结构
 
@@ -53,17 +54,10 @@ authors: AnyaReese
 
 克隆仓库并安装依赖
 ```bash
-git clone https://github.com/wrm244/docusaurus-theme-zen.git ./blog
-cd blog
+git clone https://github.com/anyareese/AnyaPage.git ./Anya
+cd Anya
 yarn
 yarn start
-```
-
-国内仓库备份
-```bash
-git clone https://gitee.com/wrm244/docusaurus-theme-zen.git ./blog
-cd blog
-yarn
 ```
 
 生成静态网页代码(./build)
@@ -77,69 +71,17 @@ yarn run build
 yarn run serve
 ```
 
-## Github Action CI
-该流程配置会同步部署到云服务器与GitHub Pages上面：修改```/.github/workflows/ci.yml```路径下的配置文件
+## Github 部署 
 
-```yml
-name: ci
+在 .github/workflows/gh-pages.yml 中配置自动部署，设置 `repo` 环境变量
 
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
+在 `repo` 环境变量中设置 PERSONAL_TOKEN 作为 `secret`
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+新建 `gh-pages` 分支，在 `repo pages` 界面选择 `gh-pages` 分支 `/root` 路径作为静态文件源
 
-      - name: Use Node.js v18.5
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.5.0'
-
-      #使用缓存
-      - name: Cache node modules
-        uses: actions/cache@v1
-        id: cache
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install
-      
-      - name: Build Project
-        run: |
-          yarn run build
-
-      #使用SSH同步到云服务器
-      # - name: SSH Deploy
-      #   uses: easingthemes/ssh-deploy@v2.2.11
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-      #     ARGS: '-avzr --delete'
-      #     SOURCE: './build'
-      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-      #     REMOTE_USER: 'root'
-      #     TARGET: '/www/wwwroot/wrm244'
-
-      - name: Github page Deploy
-        uses: wrm244/docusaurus-deploy-action@master # 
-        env:
-          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # Github个人账号密钥
-          PUBLISH_REPOSITORY: wrm244/docusaurus-theme-zen # 公共仓库，格式：GitHub 用户名/仓库名
-          BRANCH: gh-pages # 部署分支
-          PUBLISH_DIR: ./build # 部署 ./build 目录下的文件
-
-```
-
+每次 push 时自动执行 workflow，将静态文件推送到 `gh-pages` 分支并在 github.io 上部署
 
 ## 📝License
 
-[MIT](./LICENSE) © 河山 100%
+[MIT](./LICENSE) © AnyaReese 100%
 

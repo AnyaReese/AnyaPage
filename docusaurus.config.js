@@ -56,7 +56,7 @@ const config = {
       logo: {
         alt: 'AnyaReese\'s quick overview',
         src: '/assets/images/social/avatar.png',
-        srcDark: '/assets/images/social/avatar.png',
+        srcDark: '/assets/images/social/avatardark.png',
       },
       hideOnScroll: false,
       items: [
@@ -159,16 +159,13 @@ const config = {
               label: '导航',
               to: 'resource',
             },
-            {
-              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="/assets/images/buildwith.png" /></a> <a href="https://www.netlify.com/" target="_blank"><img alt="Built with Netlify" style="height:50px;margin-top:0.5rem" src="/assets/images/netlify-color-accent.svg" /></a>`,
-            },
           ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} docusaurus-theme-zen, 此网站使用 <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a> 搭建
+      copyright: `版权所有 © ${new Date().getFullYear()} AnyaPage, 此网站使用 <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a> 搭建，主题使用 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Docusaurus-Theme-Zen</a> 
       <span id="runtime_span"></span>
       <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
-      Date("10/16/2022 8:22:00");
+      Date("12/14/2024 1:00:00");
       Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
       a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
       runtime_span.innerHTML="<br>本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>`,
