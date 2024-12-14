@@ -1,5 +1,5 @@
 ---
-id: second
+id: second-blog
 slug: sec-blog
 title: Anya's second blog
 date: 2024-12-14
