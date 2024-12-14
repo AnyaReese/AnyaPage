@@ -132,9 +132,9 @@ export function SocialLinks({ ...prop }) {
 
   return (
     <animated.div className={styles.social__links} {...prop}>
-      <a href="/rss.xml" target="_blank" aria-label="Really Simple Syndication">
+      {/* <a href="/rss.xml" target="_blank" aria-label="Really Simple Syndication">
         <Icon icon="ri:rss-line" />
-      </a>
+      </a> */}
       <a href={socials.github} target="_blank" aria-label="github">
         <Icon icon="ri:github-line" />
       </a>
