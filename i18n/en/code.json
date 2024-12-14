@@ -1,11 +1,35 @@
 {
   "homepage.hero.greet": {
-    "message": "Hello! I'm ",
-    "description": "hero greet"
+    "message": "Welcome to",
+    "description": "Greeting text on the homepage hero section"
   },
   "homepage.hero.name": {
-    "message": "docusaurus-theme-zen",
-    "description": "hero name"
+    "message": " Anya",
+    "description": "The name displayed in the hero section"
+  },
+  "homepage.hero.text5": {
+    "message": "'s",
+    "description": "Part of the hero greeting message"
+  },
+  "homepage.hero.text1": {
+    "message": "I'm Anya Reese, an undergraduate student majoring in Information Security at Zhejiang University.",
+    "description": "Self-introduction in the hero section"
+  },
+  "homepage.hero.text2": {
+    "message": "You can check out my resume, explore my technical journey, or see my other interests here.",
+    "description": "Encouraging visitors to learn more"
+  },
+  "homepage.hero.text3": {
+    "message": "Of course, one's character and potential are not defined by mere experiences or accolades. Stripping away the layers of polishment on this website, I recommend you get to know the real me through real-life interactions.",
+    "description": "Encouragement to interact in real life"
+  },
+  "homepage.hero.text4": {
+    "message": "Meet Anya, a bold and creative individual here, and also, in real life.",
+    "description": "Final line of the hero section's description"
+  },
+  "hompage.hero.introduce": {
+    "message": "About Me",
+    "description": "Button label for self-introduction"
   },
   "homepage.hero.text": {
     "message": "This is a theme built with docusaurus, which combines the simplicity and ease of use of docusaurus with other open source page design solutions, supports MDX and React, is extensible and customizable, providing you with an excellent personal page solution.",
@@ -26,9 +50,6 @@
   },
   "hompage.hero.idea": {
     "message": "Idea"
-  },
-  "hompage.hero.introduce": {
-    "message": "Introduce"
   },
 "hompage.hero.text.repository":{
   "message": "Github Repo."

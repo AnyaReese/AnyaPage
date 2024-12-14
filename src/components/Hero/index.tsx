@@ -54,7 +54,7 @@ function Hero() {
           <span className={styles.intro__name}>
             <Translate id="homepage.hero.name"> Anya </Translate>
           </span>
-          <Translate id="homepage.hero.greet">的主页</Translate>
+          <Translate id="homepage.hero.text5">的主页</Translate>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text1">我是 Anya Reese，浙江大学信息安全 22 级本科生。</Translate><br />
