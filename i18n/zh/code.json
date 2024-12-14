@@ -56,30 +56,6 @@
     "message":"博客",
     "description": "blog"
   },
-  "theme.tags.tagsPageTitle": {
-    "message": "标签",
-    "description": "The title of the tag list page"
-  },
-  "blogtagpage.title": {
-    "message": "下的博客",
-    "description": "blog tag page title"
-  },
-  "blogtagpage.title.alt": {
-    "message": "",
-    "description": "blog tag page title in alternate order"
-  },
-  "blogtagpage.description": {
-    "message": "博客标签",
-    "description": "blog tag page description"
-  },
-  "blogtagpage.count.label": {
-    "message": "篇",
-    "description": "blog page count label"
-  },
-  "blogtagpage.seeall.label": {
-    "message": "查看所有标签（分类）",
-    "description": "blog page see all label"
-  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"

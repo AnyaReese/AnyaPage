@@ -111,10 +111,10 @@ const config = {
         {
           title: '博客',
           items: [
-            {
-              label: '标签',
-              to: 'tags',
-            },
+            // {
+            //   label: '标签',
+            //   to: 'tags',
+            // },
             {
               label: '归档',
               to: 'archive',
@@ -127,7 +127,7 @@ const config = {
           items: [
             {
               label: '笔记',
-              to: 'docs/stack',
+              to: 'docs/Artz',
             },
             {
               label: '项目',

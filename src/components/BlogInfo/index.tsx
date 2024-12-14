@@ -1,8 +1,6 @@
 import React from 'react'
 import { usePluginData } from '@docusaurus/useGlobalData'
 import type {
-  BlogTag,
-  BlogTags,
   BlogPost,
 } from '@docusaurus/plugin-content-blog'
 import Link from '@docusaurus/Link'
@@ -16,7 +14,6 @@ import { projects } from '@site/data/project'
 
 type Count = {
   blog: number
-  tag: number
   doc: number
   project: number
 }
@@ -35,11 +32,9 @@ export function BlogUser({ isNavbar = false }: { isNavbar?: boolean }) {
   const docData = (usePluginData('docusaurus-plugin-content-docs') as any)
     ?.versions[0].docs
   const blogData = blogPluginData?.blogs as BlogPost[]
-  const tagData = blogPluginData?.tags as BlogTags
 
   const count: Count = {
     blog: blogData.length,
-    tag: Object.keys(tagData).length ?? 0,
     doc: docData?.length ?? 0,
     project: projects?.length ?? 0,
   }
@@ -62,11 +57,8 @@ export function BlogUser({ isNavbar = false }: { isNavbar?: boolean }) {
           <Icon icon="carbon:blog" width="20" height="20" />
           {count.blog}
         </Link>
-        <Link className="bloginfo__num-item" href="/tags">
-          <Icon icon="ri:price-tag-3-line" width="20" height="20" />
-          {count.tag}
-        </Link>
-        <Link className="bloginfo__num-item" href="/docs/stack">
+        {/* 删除与 tag 相关的部分 */}
+        <Link className="bloginfo__num-item" href="/docs/Artz">
           <Icon icon="carbon:notebook" width="20" height="20" />
           {count.doc}
         </Link>
@@ -91,29 +83,9 @@ export function BlogUser({ isNavbar = false }: { isNavbar?: boolean }) {
   )
 }
 
-const TagsSection = ({ data }: { data: BlogTag[] }) => {
-  return (
-    <div className="bloginfo__tags">
-      {data
-        .filter(tag => tag != null)
-        .sort((a, b) => b.items.length - a.items.length)
-        .slice(0, 25)
-        .map(tag => (
-          <Link
-            className={`post__tags note__item margin-right--sm margin-bottom--sm`}
-            href={tag.permalink}
-            key={tag.permalink}
-          >
-            {tag.label}
-          </Link>
-        ))}
-    </div>
-  )
-}
-
 export default function BlogInfo() {
   const blogPluginData = usePluginData('docusaurus-plugin-content-blog') as any
-  const tagData = blogPluginData?.tags as BlogTags
+  const blogData = blogPluginData?.blogs as BlogPost[]
 
   return (
     <div className="bloginfo col col--3 margin-bottom--md">
@@ -124,11 +96,12 @@ export default function BlogInfo() {
           </div>
           <div className="bloghome__posts-card margin-bottom--md">
             <div className="row bloginfo__card">
-              <div style={{ display: 'inline-flex', alignItems: 'center' }}>
-                <Icon icon="ri:price-tag-3-line" width="20" height="20" />
-                <span className="margin-horiz--sm">标签</span>
-              </div>
-              <TagsSection data={Object.values(tagData)} />
+              {/* 删除标签部分 */}
+              {/* <div style={{ display: 'inline-flex', alignItems: 'center' }}> */}
+              {/*   <Icon icon="ri:price-tag-3-line" width="20" height="20" /> */}
+              {/*   <span className="margin-horiz--sm">标签</span> */}
+              {/* </div> */}
+              {/* <TagsSection data={Object.values(tagData)} /> */}
             </div>
           </div>
         </Fade>

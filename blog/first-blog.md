@@ -3,7 +3,7 @@ id: first
 slug: first-blog
 title: Anya's first blog
 date: 2024-12-14
-tags: [anya, ZJU, Docusaurus, LifeHack, Tech]
+# tags: [anya, ZJU, Docusaurus, LifeHack, Tech]
 authors: AnyaReese
 ---
 
@@ -13,10 +13,6 @@ import LogoSwitcher from '@site/src/components/Logo/LogoSwitcher';
 
 
 ## AnyaReese Home Page
-
-![GitHub last commit](https://img.shields.io/github/last-commit/anyareese/AnyaPage?label=update&logo=github)
-
-![GitHub Action](https://img.shields.io/github/actions/workflow/status/anyareese/AnyaPage/ci.yml?label=CI%20Build&logo=github)
 
 ## 介绍
 
