@@ -1,6 +1,6 @@
 ---
 slug: resume
-title: Anya
+title: 个人简历
 date: 2024-12-14
 tags: []
 authors: AnyaReese
@@ -10,7 +10,7 @@ authors: AnyaReese
 
 ## 基本信息
 
-- **姓名**：Anya Reese
+- **姓名**：林子昕
 - **性别**：女
 
 

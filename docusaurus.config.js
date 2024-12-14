@@ -65,12 +65,8 @@ const config = {
           position: 'left',
           items: [
             {
-              label: '简历',
+              label: '关于我',
               to: 'docs/personal/resume',
-            },
-            {
-              label: '博客',
-              to: 'first-blog',
             },
             {
               label: '归档',
@@ -81,22 +77,22 @@ const config = {
         {
           label: '艺体笔记',
           position: 'left',
-          to: 'docs/stack/',
+          to: 'docs/Artz',
           items: [
             {
               label: '个人创作',
-              to: 'first-blog',
+              to: 'docs/Artz/art-display',
             },
             {
               label: '体育竞技记录',
-              to: 'docs/stack/',
+              to: 'docs/Artz/sports',
             },
           ],
         },
         {
-          label: '导航',
+          label: '博客',
           position: 'left',
-          to: 'resource',
+          to: 'first-blog',
         },
         {
           label: '项目',
@@ -284,6 +280,7 @@ const config = {
         blogSidebarTitle: '最近更新',
         postsPerPage: 10,
         showReadingTime: true,
+        sortPosts: 'ascending', // 按日期升序排列
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {

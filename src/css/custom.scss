@@ -1,11 +1,11 @@
 @import "local.google.fonts.css";
 :root {
-  --ifm-color-primary: #0086f1;
-  --ifm-color-primary-dark: #05a1ec;
-  --ifm-color-primary-darker: #0598df;
-  --ifm-color-primary-darkest: #047eb8;
-  --ifm-color-primary-light: #2cb8fb;
-  --ifm-color-primary-lighter: #b0e6ff;
+  --ifm-color-primary: #44649b;
+  --ifm-color-primary-dark: #5a6b7a;
+  --ifm-color-primary-darker: #4a5b6a;
+  --ifm-color-primary-darkest: #1c3448;
+  --ifm-color-primary-light: #8ab0c1;
+  --ifm-color-primary-lighter: #b0d0e0;
   --ifm-color-primary-lightest: #d5f1fd;
   --ifm-code-font-size: 90%;
   --ifm-font-family-base: 'Noto Serif SC','SF Pro Text','SF Pro Display','SF Pro Icons','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui, ui-sans-serif,-apple-system,'Segoe UI', 'Helvetica Neue', 'Noto Sans', sans-serif, 'Apple Color Emoji',consolas,'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', consolas,sfmono-regular, menlo, monaco, 'Liberation Mono', monospace;
@@ -61,7 +61,7 @@
 }
 
 html {
-  --post-title-color: hsl(220deg 79% 58%);
+  --post-title-color: hsl(220, 58%, 37%);
   --post-pub-date-color: #8c8c8c;
   --divider-color: #ebebeb;
   --post-shadow-color: rgb(220 220 220 / 30%);
@@ -161,7 +161,7 @@ html[data-theme='dark'] .theme-code-block {
 .main-wrapper h1 {
   font-size: 2.2em;
 }
-//行间距
+
 .docItemContainer p { 
   line-height: 1.3; 
 }

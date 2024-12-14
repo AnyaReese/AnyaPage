@@ -1,4 +1,5 @@
 ---
+id: first
 slug: first-blog
 title: Anya's first blog
 date: 2024-12-14
