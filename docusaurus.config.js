@@ -220,9 +220,9 @@ const config = {
     },
     socials: {// TODO 个人社交媒体，没有的换个 icon
       github: 'https://github.com/anyareese',
-      twitter: 'https://twitter.com/',
-      csdn: 'https://blog.csdn.net/',
-      zhihu: 'https://www.zhihu.com/',
+      twitter: 'https://x.com/AnyaReese555',
+      // csdn: 'https://blog.csdn.net/',
+      zhihu: 'https://www.zhihu.com/people/anya-reese',
     },
   },
   headTags: [

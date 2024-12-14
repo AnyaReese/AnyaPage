@@ -39,10 +39,6 @@
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/kuizuo"
   },
-  "link.item.label.掘金": {
-    "message": "Juejin",
-    "description": "The label of footer link with label=掘金 linking to https://juejin.cn/user/1565318510545901"
-  },
   "link.item.label.Discord": {
     "message": "Discord",
     "description": "The label of footer link with label=Discord linking to https://discord.gg/M8cVcjDxkz"
@@ -62,9 +58,5 @@
   "link.title.博客": {
     "message": "Blog",
     "description": "The label of footer link with label=博客 linking to resource"
-  },
-  "link.item.label.幻灯片": {
-    "message": "Slides",
-    "description": "The label of footer link with label=幻灯片 linking to https://wrm244.gitee.io/slide/"
   }
 }

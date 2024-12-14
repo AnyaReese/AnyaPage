@@ -8,7 +8,7 @@ import styles from './styles.module.css'
 
 const TITLE = '友情链接'
 const DESCRIPTION = '申请友链请点击下方申请'
-const ADD_FRIEND_URL = 'https://github.com/wrm244/wikiblog/edit/main/data/friend.ts'
+// const ADD_FRIEND_URL = 'https://github.com/244/wikiblog/edit/main/data/friend.tswrm'
 
 function FriendHeader() {
   return (
@@ -17,7 +17,7 @@ function FriendHeader() {
       <p>{DESCRIPTION}</p>
       <a
         className="button button--primary"
-        href={ADD_FRIEND_URL}
+        // href={ADD_FRIEND_URL}
         target="_blank"
         rel="noreferrer"
       >

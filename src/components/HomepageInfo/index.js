@@ -17,7 +17,7 @@ const FeatureList = [
     img_github : 'img/pixel/github.svg',
     img_about: 'img/pixel/aboutme.svg', 
     img_wechat: 'img/pixel/wechat.svg', 
-    img_qq: 'img/pixel/qq.svg',
+    // img_qq: 'img/pixel/qq.svg',
   },
 ];
 

@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link'
 
 import HeroMain from './img/anyahome.svg'
 
-import JuejinIcon from '@site/static/svg/juejin.svg'
+// import JuejinIcon from '@site/static/svg/juejin.svg'
 import { Icon } from '@iconify/react'
 import Button from '../Button';
 import styles from './styles.module.scss'
@@ -122,11 +122,11 @@ export function SocialLinks({ ...prop }) {
   const socials = themeConfig.socials as {
     github: string
     twitter: string
-    juejin: string
-    csdn: string
-    qq: string
+    // juejin: string
+    // csdn: string
+    // qq: string
     wx: string
-    cloudmusic: string
+    // cloudmusic: string
     zhihu: string
   }
 
@@ -138,12 +138,12 @@ export function SocialLinks({ ...prop }) {
       <a href={socials.github} target="_blank" aria-label="github">
         <Icon icon="ri:github-line" />
       </a>
-      <a href={socials.juejin} target="_blank" aria-label="juejin">
+      {/* <a href={socials.juejin} target="_blank" aria-label="juejin">
         <JuejinIcon />
-      </a>
-      <a href={socials.qq} target="_blank" aria-label="QQ">
+      </a> */}
+      {/* <a href={socials.qq} target="_blank" aria-label="QQ">
         <Icon icon="ri:qq-line" />
-      </a>
+      </a> */}
       <a href={socials.twitter} target="_blank" aria-label="twitter">
         <Icon icon="ri:twitter-line" />
       </a>

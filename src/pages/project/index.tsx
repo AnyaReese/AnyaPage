@@ -17,10 +17,10 @@ const TITLE = translate({
 })
 const DESCRIPTION = translate({
   id: 'theme.project.description',
-  message: '以下项目均由本人开发，均可自由使用，部分开源。',
+  message: '以下项目均由本人开发。',
 })
 
-const GITHUB_URL = 'https://github.com/wrm244'
+const GITHUB_URL = 'https://anyareese.github.io'
 
 type ProjectState = {
   scrollTopPosition: number
@@ -56,7 +56,7 @@ function ShowcaseHeader() {
         rel="noreferrer"
       >
         <Translate id="showcase.header.button">
-          🥰 前往 Github 克隆项目
+          🥰 前往 Github 查看项目
         </Translate>
       </a>
     </section>

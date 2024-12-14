@@ -1,14 +1,25 @@
 export const projects: Project[] = [
   {
-    title: 'docusaurus-theme-zen',
-    description: '基于Docusaurus v2 主题设计部署个人网站',
-    preview: '/assets/images/project/blog.png',
-    website: 'https://wrm244.github.io/docusaurus-theme-zen',
-    source: 'https://github.com/wrm244/docusaurus-theme-zen',
+    title: 'CS144 课程仓库',
+    description: '存放斯坦福 CS144 计算机网络课程的解题代码',
+    preview: '/AnyaPage/assets/images/project/cs144.png',
+    website: 'https://github.com/AnyaReese/sponge',
+    source: 'https://github.com/AnyaReese/sponge',
     tags: ['opensource', 'design', 'favorite'],
-    type: 'web',
+    type: 'other',
+  },
+  {
+    title: 'AnyaPage',
+    description: 'AnyaReese 的个人博客',
+    preview: '/AnyaPage/assets/images/project/blog.png',
+    website: 'https://anyareese.github.io',
+    source: 'https://github.com/AnyaReese/AnyaPage',
+    tags: ['personal', 'design', 'favorite'],
+    type: 'other',
   },
 ]
+
+
 
 export type Tag = {
   label: string
