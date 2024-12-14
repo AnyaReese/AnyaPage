@@ -1,7 +1,7 @@
 const path = require('path')
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const announcementBarContent = `🎉 Welcometo Anya Reese's Home Page`
+const announcementBarContent = `🎉 Welcome to Anya Reese's Home Page. "Plus est en vous."`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,11 +39,11 @@ const config = {
       },
       {
         name: 'keywords',
-        content: 'blog, art, python, javascript, react, vue',
+        content: 'blog, art, python, javascript, react, vue, ZJU',
       },
       {
         name: 'keywords',
-        content: ' 编程爱好者',
+        content: ' 编程, 艺术, 音乐剧, 飞盘',
       },
     ],
     docs: {
@@ -79,7 +79,7 @@ const config = {
           ],
         },
         {
-          label: '艺术笔记',
+          label: '艺体笔记',
           position: 'left',
           to: 'docs/stack/',
           items: [
@@ -88,7 +88,7 @@ const config = {
               to: 'first-blog',
             },
             {
-              label: '深入人心的作品',
+              label: '体育竞技记录',
               to: 'docs/stack/',
             },
           ],
