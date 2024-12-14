@@ -60,7 +60,7 @@ function Hero() {
           <Translate id="homepage.hero.text1">我是 Anya Reese，浙江大学信息安全 22 级本科生。</Translate><br />
           <Translate id="homepage.hero.text2">如果你想要了解我，可以在这里查看我的个人简历、了解我的技术探索以及业余学习。</Translate><br />
           <Translate id="homepage.hero.text3">当然，一个人的人格底色和实力潜力并不由一些所谓的经历和荣誉决定。祛除网站上的层层包装，我更推荐您在现实生活的接触交往中了解真实的我。</Translate><br />
-          <Translate id="homepage.hero.text4">Meet Anya, a bold and creative individual here, and also, in life.</Translate>
+          <Translate id="homepage.hero.text4">Meet Anya, a bold and creative individual here, and also, in real life.</Translate>
           <br />
           {/* <Translate
             id="homepage.hero.look"

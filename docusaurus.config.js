@@ -70,6 +70,10 @@ const config = {
             },
             {
               label: '博客',
+              to: 'first-blog',
+            },
+            {
+              label: '归档',
               to: 'archive',
             },
           ],
@@ -273,7 +277,7 @@ const config = {
         path: 'blog',
         routeBasePath: '/',
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/wrm244/docusaurus-theme-zen/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/anyareese/AnyaPage/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: 'docusaurus-theme-zen',
         blogSidebarCount: 10,

@@ -1,6 +1,6 @@
 ---
 slug: first-blog
-title: Anya's first 
+title: Anya's first blog
 date: 2024-12-14
 tags: [anya, ZJU, Docusaurus, LifeHack, Tech]
 authors: AnyaReese
@@ -12,7 +12,10 @@ import LogoSwitcher from '@site/src/components/Logo/LogoSwitcher';
 
 
 ## AnyaReese Home Page
-![GitHub last commit](https://img.shields.io/github/last-commit/wrm244/docusaurus-theme-zen?label=update&logo=github)  
+
+![GitHub last commit](https://img.shields.io/github/last-commit/anyareese/AnyaPage?label=update&logo=github)
+
+![GitHub Action](https://img.shields.io/github/actions/workflow/status/anyareese/AnyaPage/ci.yml?label=CI%20Build&logo=github)
 
 ## 介绍
 
@@ -20,7 +23,7 @@ import LogoSwitcher from '@site/src/components/Logo/LogoSwitcher';
 
 <!-- truncate -->
 
-> 这是我的个人主页。
+> 这是我的第一篇博客。
 
 ## 目录结构
 
