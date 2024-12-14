@@ -3,6 +3,26 @@
     "message": "Anya's Technical Archive",
     "description": "The title in the navbar"
   },
+  "item.label.个人足迹": {
+    "message": "Footprints",
+    "description": "Navbar item with label 个人足迹"
+  },
+  "item.label.艺体笔记": {
+    "message": "Art and Sports",
+    "description": "Navbar item with label 艺体笔记"
+  },
+  "item.label.关于我": {
+    "message": "About Me",
+    "description": "Navbar item with label 关于我"
+  },
+  "item.label.个人创作": {
+    "message": "Artwork",
+    "description": "Navbar item with label 个人创作"
+  },
+  "item.label.体育竞技记录": {
+    "message": "Sports Competition",
+    "description": "Navbar item with label 体育竞技记录"
+  },
   "item.label.博客": {
     "message": "blog",
     "description": "Navbar item with label 博客"
