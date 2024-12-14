@@ -1,13 +1,15 @@
-
 ## Anya's Home Page
 
 ## 介绍
 
- 个人主页网站，<a href="https://docusaurus.io/"> Docusaurus </a>搭建，使用 docusaurus-theme-zen 模板，遵循[MIT](./LICENSE)协议。
-
+个人主页网站，<a href="https://docusaurus.io/"> Docusaurus </a>搭建，使用 docusaurus-theme-zen 模板，遵循[MIT](./LICENSE)协议。
 
 ## 特性
 
+- 动画效果，响应式设计
+- 友好的用户界面
+- 主页面双语切换支持
+- 主题色切换时图片同时响应
 
 ## 目录结构
 
@@ -16,8 +18,10 @@
 │   ├── first-blog.md
 │   └── authors.yml                # 作者信息(可以多个作者)
 ├── docs                           # 文档/笔记
+│   └── Artz
+│         └── introduction.md       # 艺术体育相关内容介绍
 │   └── stack
-│         └──introduction.md       # 笔记介绍
+│         └── introduction.md       # 笔记介绍
 ├── data                           # 项目/导航/友链数据
 │   ├── friend.ts                  # 友链
 │   ├── project.ts                 # 项目
@@ -34,24 +38,17 @@
 ├── docusaurus.config.js           # 站点的配置信息
 ├── sidebars.js                    # 文档的侧边栏
 ├── package.json
-└── yarn.lock                      # 建议使用yarn保留
+└── yarn.lock
 ```
 
 ## 安装
 
 克隆仓库并安装依赖
 ```bash
-git clone https://github.com/wrm244/docusaurus-theme-zen.git ./blog
+git clone https://github.com/anyareese/AnyaPage.git ./blog
 cd blog
 yarn
 yarn start
-```
-
-国内仓库备份
-```bash
-git clone https://gitee.com/wrm244/docusaurus-theme-zen.git ./blog
-cd blog
-yarn
 ```
 
 生成静态网页代码(./build)
@@ -66,8 +63,15 @@ yarn run serve
 ```
 
 ## Github Action CI
-该流程配置会同步部署到云服务器与GitHub Pages上面：
-修改```/.github/workflows/ci.yml```路径下的配置文件
+
+该流程配置部署在 GitHub Pages 上面，每次 push 到 main 分支时，将自动部署到 gh-pages 分支。
+
+新建一个 Github 个人账号密钥，将密钥添加到仓库的 `Settings` -> `Secrets` -> `New repository secret` 中
+
+新建 `gh-pages` 分支，将该分支的 `./root` 设置为 Github Page 的 Source
+
+修改 `/.github/workflows/ci.yml` 路径下的配置文件
+
 ```yml
 name: ci
 
@@ -105,28 +109,15 @@ jobs:
         run: |
           yarn run build
 
-      #使用SSH同步到云服务器
-      # - name: SSH Deploy
-      #   uses: easingthemes/ssh-deploy@v2.2.11
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-      #     ARGS: '-avzr --delete'
-      #     SOURCE: './build'
-      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-      #     REMOTE_USER: 'root'
-      #     TARGET: '/www/wwwroot/wrm244'
-
       - name: Github page Deploy
         uses: wrm244/docusaurus-deploy-action@master # 
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # 你的Github个人账号密钥
-          PUBLISH_REPOSITORY: wrm244/docusaurus-theme-zen # 公共仓库，格式：GitHub 用户名/仓库名
+          PERSONAL_TOKEN: ${{ secrets.PERSION_TOKEN }} # Github个人账号密钥
+          PUBLISH_REPOSITORY: anyareese/AnyaPage # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 部署分支
           PUBLISH_DIR: ./build # 部署 ./build 目录下的文件
-
 ```
-
 
 ## License
 
-[MIT](./LICENSE) © 河山 100%
+[MIT](./LICENSE) © AnyaReese 100%
