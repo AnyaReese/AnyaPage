@@ -19,6 +19,10 @@
     "message": "Notes",
     "description": "The label of footer link with label=笔记 linking to docs/skill"
   },
+  "link.item.label.博客": {
+    "message": "Blog",
+    "description": "The label of footer link with label=博客 linking to blog"
+  },
   "link.item.label.项目": {
     "message": "Projects",
     "description": "The label of footer link with label=项目 linking to project"
@@ -38,14 +42,6 @@
   "link.item.label.Discord": {
     "message": "Discord",
     "description": "The label of footer link with label=Discord linking to https://discord.gg/M8cVcjDxkz"
-  },
-  "link.item.label.友链": {
-    "message": "Friends",
-    "description": "The label of footer link with label=友链 linking to friends"
-  },
-  "link.item.label.导航": {
-    "message": "Links",
-    "description": "The label of footer link with label=导航 linking to resource"
   },
   "copyright": {
     "message": "Copyright © 2024 AnyaPage. Built with <a href=\"https://docusaurus.io/zh-CN/\" target=\"_blank\">Docusaurus.</a><br/><script async src=\"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js\"></script><br/><span id=\"busuanzi_container_site_pv\">This site has been visited <span id=\"busuanzi_value_site_pv\"></span> times in total.</span>",

@@ -111,10 +111,10 @@ const config = {
         {
           title: '博客',
           items: [
-            // {
-            //   label: '标签',
-            //   to: 'tags',
-            // },
+            {
+              label: '博客',
+              to: 'first-blog',
+            },
             {
               label: '归档',
               to: 'archive',
@@ -145,19 +145,6 @@ const config = {
             {
               label: 'GitHub',
               href: 'https://github.com/anyareese',
-            },
-          ],
-        },
-        {
-          title: '更多',
-          items: [
-            {
-              label: '友链',
-              to: 'friends',
-            },
-            {
-              label: '导航',
-              to: 'resource',
             },
           ],
         },
