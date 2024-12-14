@@ -6,8 +6,8 @@ import { Friends, type Friend } from '@site/data/friend'
 
 import styles from './styles.module.css'
 
-const TITLE = '友情链接'
-const DESCRIPTION = '申请友链请点击下方申请'
+const TITLE = 'TOD: 添加友情链接'
+const DESCRIPTION = 'TODO: 申请友链请点击下方申请(暂未实现)'
 // const ADD_FRIEND_URL = 'https://github.com/244/wikiblog/edit/main/data/friend.tswrm'
 
 function FriendHeader() {

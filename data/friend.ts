@@ -1,9 +1,9 @@
 export const Friends: Friend[] = [
   {
-    title: 'AnyaReese 的技术存档',
+    title: 'AnyaReese Github 主页',
     description: '计算机研究，艺术爱好者',
-    website: 'https://anyareese.github.com', // 暂时没有挂友链
-    avatar: '/assets/images/friends/avatar.png',
+    website: 'https://github.com/AnyaReese', // 暂时没有挂友链
+    avatar: '/AnyaPage/assets/images/social/avatar.png',
   },
 ]
 

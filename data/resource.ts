@@ -25,16 +25,16 @@ const friends: Resource[] = Friends.map(f => {
 
 export const resourceData: ResourceCategory[] = [
   {
-    name: '友链👨‍💻',
+    name: '暂未添加友链👨‍💻',
     resources: friends,
   },
   {
-    name: '添加你收藏的站点',
+    name: '',
     resources: [
       {
         name: '动手学深度学习',
         desc: '面向中文读者的能运行、可讨论的深度学习教科书',
-        logo: '/assets/images/resource/d2l.png',
+        logo: '/AnyaPage/assets/images/avatar.png',
         href: 'https://zh.d2l.ai/',
       },
     ],
