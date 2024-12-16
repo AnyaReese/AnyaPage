@@ -53,8 +53,8 @@ const ProfileInfo = () => {
         <p><strong>姓名：</strong>林子昕</p>
         <p><strong>学校：</strong>浙江大学</p>
         <p><strong>专业：</strong>计算机科学与技术学院 22 级信息安全</p>
-        <p><strong>绩点：</strong>4.08/5.0</p>
-        <p><strong>主修绩点：</strong>4.12/5.0</p>
+        {/* <p><strong>绩点：</strong>4.08/5.0</p>
+        <p><strong>主修绩点：</strong>4.12/5.0</p> */}
       </div>
     </div>
   );
