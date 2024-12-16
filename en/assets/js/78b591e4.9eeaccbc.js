@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_theme_zen=self.webpackChunkdocusaurus_theme_zen||[]).push([[480],{4630:function(e){e.exports=JSON.parse('{"permalink":"/AnyaPage/en/","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"docusaurus-theme-zen","blogTitle":"Blog"}')}}]);
